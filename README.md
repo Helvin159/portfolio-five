@@ -52,7 +52,7 @@ The app features a range of projects, each highlighting different skills and tec
 
 If you wish to run the project locally, follow these steps:
 
-1. Clone the repository from GitHub: `https://github.com/Helvin159/portfolio-five`
+1. Clone the repository from GitHub: [Portfolio Five Repo](https://github.com/Helvin159/portfolio-five)
 
 2. Install the required dependencies:
 
