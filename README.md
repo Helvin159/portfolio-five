@@ -1,4 +1,4 @@
-# Portfolio Five - Next.js App for MrRymer.tech
+# Portfolio Five - Next.js App for Helvin Rymer
 
 Portfolio Five is a personal project developed by [Your Name] to showcase a collection of work and projects. The primary focus of this portfolio is to demonstrate proficiency in various languages, frameworks, and content management systems (CMS). The project is a Next.js app built for an already existing WordPress instance, MrRymer.tech, to display the work in different formats.
 
