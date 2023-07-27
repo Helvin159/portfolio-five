@@ -1,11 +1,15 @@
-.component {
-	color: var(--wpe--footer--color);
-	background: var(--wpe--footer--background-color);
-	padding-top: var(--wpe--section--padding-y);
-	padding-bottom: var(--wpe--section--padding-y);
-}
+.footer {
+	background: linear-gradient(
+		90deg,
+		#fff 7.79%,
+		#73f373 7.79%,
+		#73f373 36.94%,
+		#fff 36.94%
+	);
+	padding: 2.7rem 0;
 
-.copyright {
-	margin: 2rem 0;
-	text-align: center;
+	&__copyright {
+		margin: 2rem 0;
+		text-align: center;
+	}
 }

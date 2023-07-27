@@ -1,26 +1,23 @@
-@import "styles/breakpoints";
+@import 'styles/breakpoints';
 
-.component {
-	text-align: center;
-	padding: 6rem 1rem;
-	line-height: 1.3;
-	margin: 0 auto;
-	max-width: var(--wpe--container--max-width);
-	position: relative;
-}
-
-.title {
-	display: block;
-	font-size: 5rem;
-	z-index: 1;
+.hero {
+	width: 100%;
+	height: 81.8vh;
+	height: 81.8dvh;
 	position: relative;
 
-	@media (max-width: $breakpoint-small) {
-		font-size: 3rem;
+	&__content {
+		background: linear-gradient(
+			90deg,
+			#fff 8.5%,
+			#73f373 8.5%,
+			#73f373 29.5%,
+			#fed500 29.5%,
+			#fed500 64.7%,
+			#73f373 64.7%
+		);
+
+		height: 100%;
+		right: 0;
 	}
-}
-
-.subtitle {
-	display: block;
-	font-size: 3rem;
 }
