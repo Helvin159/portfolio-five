@@ -19,5 +19,14 @@
 
 		height: 100%;
 		right: 0;
+		align-items: end;
+
+		&__subtitle {
+			padding: 0 0 1rem 4rem;
+
+			& h2 {
+				font-size: 96px;
+			}
+		}
 	}
 }

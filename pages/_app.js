@@ -6,11 +6,11 @@ import '@faustwp/core/dist/css/toolbar.css';
 import '../styles/global.scss';
 
 export default function MyApp({ Component, pageProps }) {
-  const router = useRouter();
+	const router = useRouter();
 
-  return (
-    <FaustProvider pageProps={pageProps}>
-      <Component {...pageProps} key={router.asPath} />
-    </FaustProvider>
-  );
+	return (
+		<FaustProvider pageProps={pageProps}>
+			<Component {...pageProps} key={router.asPath} />
+		</FaustProvider>
+	);
 }

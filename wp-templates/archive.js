@@ -41,7 +41,6 @@ export default function Component() {
 			<Main>
 				<Hero
 					title={myData?.data?.pageBy?.home?.aboutHeading}
-					subTitle={siteDescription}
 					description={myData?.data?.pageBy?.home?.aboutParagraph}
 				/>
 			</Main>

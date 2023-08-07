@@ -8,6 +8,7 @@ import {
 } from '../../components';
 
 import styles from './Header.module.scss';
+import { gql, useQuery } from '@apollo/client';
 
 export default function Header({
 	title = 'Headless by WP Engine',
@@ -16,6 +17,21 @@ export default function Header({
 }) {
 	const [isNavShown, setIsNavShown] = useState(false);
 
+	const { data } = useQuery(gql`
+		query NewQuery {
+			user(id: "dXNlcjox") {
+				socialMedia {
+					facebook
+					github
+					linkedin
+					instagram
+				}
+				userId
+			}
+		}
+	`);
+
+	console.log(data, 'header data');
 	return (
 		<header className={styles.header}>
 			<div className='row'>
@@ -30,9 +46,21 @@ export default function Header({
 				<div className='col-5'>
 					<div className={styles.header__social}>
 						<ul>
-							<li>FB</li>
-							<li>TW</li>
-							<li>IN</li>
+							<li>
+								<a href={data?.user.socialMedia.github} target='_blank'>
+									GH
+								</a>
+							</li>
+							<li>
+								<a href={data?.user.socialMedia.instagram} target='_blank'>
+									ig
+								</a>
+							</li>
+							<li>
+								<a href={data?.user.socialMedia.linkedin} target='_blank'>
+									IN
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
