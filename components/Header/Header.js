@@ -17,6 +17,10 @@ export default function Header({
 }) {
 	const [isNavShown, setIsNavShown] = useState(false);
 
+
+const publicUserId = process.env.PUBLIC_USER_ID;
+console.log(publicUserId, 'id')
+
 	const { data } = useQuery(gql`
 		query NewQuery {
 			user(id: "dXNlcjox") {
@@ -31,7 +35,9 @@ export default function Header({
 		}
 	`);	
 	
-	console.log(process.env.PUBLIC_USER_ID, 'id')
+	
+	
+	
 
 	console.log(data, 'header data');
 	return (
