@@ -19,7 +19,7 @@ export default function Header({
 
 	const { data } = useQuery(gql`
 		query NewQuery {
-			user(id: "${process.env.PUBLIC_USER_ID}") {
+			user(id: ${process.env.PUBLIC_USER_ID}) {
 				socialMedia {
 					facebook
 					github
@@ -32,7 +32,6 @@ export default function Header({
 	`);	
 
 	console.log(data, 'header data');
-	console.log(data, 'header data - from userEnvVariable Branch');
 	return (
 		<header className={styles.header}>
 			<div className='row'>
