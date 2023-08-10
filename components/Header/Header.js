@@ -19,7 +19,7 @@ export default function Header({
 
 	const { data } = useQuery(gql`
 		query NewQuery {
-			user(id: ${process.env.PUBLIC_USER_ID}) {
+			user(id: "${process.env.PUBLIC_USER_ID}") {
 				socialMedia {
 					facebook
 					github
